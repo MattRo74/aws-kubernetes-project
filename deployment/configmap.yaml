@@ -1,10 +1,10 @@
 apiVersion: v1
-kind: ConfigMap
+kind: CoworkingConfigMap
 metadata:
   name: db-env
 data:
-  DB_NAME: "mydatabase"
-  DB_USER: "myuser"
+  DB_NAME: "coworkdb"
+  DB_USER: "coworker"
   DB_HOST: "postgresql-service"
   DB_PORT: "5432"
 ---
@@ -14,4 +14,4 @@ metadata:
   name: coworking-secret
 type: Opaque
 data:
-  POSTGRES_PASSWORD: mypassword
+  POSTGRES_PASSWORD: "TTNhczNhc0EzM2Fp"
