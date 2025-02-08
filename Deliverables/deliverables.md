@@ -1,18 +1,35 @@
+### Deliverables
+1. `Dockerfile`
+Link to the Dockerfile: https://github.com/MattRo74/aws-kubernetes-project/blob/master/Dockerfile
 
+2. Screenshot of AWS CodeBuild pipeline
 
+<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/CodeBuild_Pipline.png">
 
+3. Screenshot of AWS ECR repository for the application's repository
 
+<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/ECR_Repository.png">
 
-**Note:** For the screenshots, you can store all of your answer images in the `answer-img` directory.
+4. Screenshot of `kubectl get svc`
 
-## Verify the monitoring installation
+<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/KUBECTL_GET_SVC.png">
 
-*TODO:* run `kubectl` command to show the running pods and services for all components. Take a screenshot of the output and include it here to verify the installation
+5. Screenshot of `kubectl get pods`
 
-*kubectl get pods,svc -n monitoring:*
+<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/KUBECT_GET_PODS.png">
 
-<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/images/STEP01.png>
+6. Screenshot of `kubectl describe svc <DATABASE_SERVICE_NAME>`
 
-*kubectl get pods,svc -n observability:*
+<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/KUBECTL_DESCRIBE_SVC_POSTGRES-SERVICE.png">
 
-<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/images/STEP02.png">
+7. Screenshot of `kubectl describe deployment <SERVICE_NAME>`
+
+<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/KUBECTL_DESCRIBE_DEPLOYMENT_COWORKING.png">
+
+8. All Kubernetes config files used for deployment (ie YAML files)
+
+Link to the YAMML Files: https://github.com/MattRo74/aws-kubernetes-project/tree/master/deployment
+
+9. Screenshot of AWS CloudWatch logs for the application
+
+<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/CLOUDWATCH.png">
