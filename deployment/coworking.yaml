@@ -46,7 +46,7 @@ spec:
           timeoutSeconds: 5
         envFrom:
         - configMapRef:
-            name: CoworkingConfigMap
+            name: db-env
         env:
         - name: DB_PASSWORD
           valueFrom:
