@@ -4,7 +4,7 @@ Link to the Dockerfile: https://github.com/MattRo74/aws-kubernetes-project/blob/
 
 2. Screenshot of AWS CodeBuild pipeline
 
-<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/CodeBuild_Pipline.png">
+<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/CodeBuild_Pipline_Automation.png">
 
 3. Screenshot of AWS ECR repository for the application's repository
 
@@ -16,7 +16,7 @@ Link to the Dockerfile: https://github.com/MattRo74/aws-kubernetes-project/blob/
 
 5. Screenshot of `kubectl get pods`
 
-<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/KUBECT_GET_PODS.png">
+<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/KUBECT_GET_PODS_NEW.png">
 
 6. Screenshot of `kubectl describe svc <DATABASE_SERVICE_NAME>`
 
@@ -32,4 +32,4 @@ Link to the YAMML Files: https://github.com/MattRo74/aws-kubernetes-project/tree
 
 9. Screenshot of AWS CloudWatch logs for the application
 
-<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/CLOUDWATCH.png">
+<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/CLOUDWATCH_LOG.png">

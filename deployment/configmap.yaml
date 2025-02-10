@@ -4,6 +4,6 @@ metadata:
   name: db-env
 data:
   DB_NAME: "coworkdb"
-  DB_USER: "coworker"
-  DB_HOST: "postgresql-service"
+  DB_USERNAME: "coworker"
+  DB_HOST: "postgresql.default.svc.cluster.local"
   DB_PORT: "5432"
