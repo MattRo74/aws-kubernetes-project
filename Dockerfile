@@ -1,5 +1,12 @@
 FROM python:3.10-slim-buster
 
+# Set environment variables
+ENV DB_USERNAME=coworker
+ENV DB_PASSWORD=M3as3asA33ai
+ENV DB_HOST=127.0.0.1
+ENV DB_PORT=5432
+ENV DB_NAME=coworkdb
+
 USER root
 
 RUN apt update -y && apt install postgresql postgresql-contrib -y
