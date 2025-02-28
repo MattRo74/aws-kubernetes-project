@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: coworking
-        image: <DOCKER_IMAGE_URI_FROM_ECR>
+        image: 593793065722.dkr.ecr.us-east-1.amazonaws.com/coworking-analytics:6
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
@@ -32,12 +32,12 @@ spec:
           timeoutSeconds: 5
         envFrom:
         - configMapRef:
-            name: ConfigMap
+            name: db-env
         env:
         - name: DB_USERNAME
           valueFrom:
             configMapKeyRef:
-              name: ConfigMap
+              name: db-env
               key: DB_USER     
         - name: DB_PASSWORD
           valueFrom:
