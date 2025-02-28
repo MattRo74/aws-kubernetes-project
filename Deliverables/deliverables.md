@@ -43,7 +43,7 @@ Daily Usage:
 
 Daily Visits:
 
-<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/USER_VISITS.png">
+<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/CURL_USER_VISITS.png">
 
 This was the wrong (old) screenshot: 
 
