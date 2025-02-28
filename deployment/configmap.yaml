@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: db-env
 data:
-  DB_NAME: "coworkdb"
-  DB_USERNAME: "coworker"
-  DB_HOST: "postgresql-service"
+  DB_NAME: "mydatabase"
+  DB_USER: "myuser"
+  DB_HOST: "postgres"
   DB_PORT: "5432"

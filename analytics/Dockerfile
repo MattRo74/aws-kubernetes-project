@@ -1,17 +1,33 @@
-FROM python:3.10-slim-buster
+FROM python:3.9.19-slim
 
-USER root
 
-WORKDIR /src
+## Environment Variables
+ENV APP_PORT=5153
+ENV DB_USERNAME=USERNAME
+ENV DB_PASSWORD=PASSWORD
+ENV DB_HOST=127.0.0.1
+ENV DB_PORT=5432
+ENV DB_NAME=postgres
 
-COPY ./requirements.txt requirements.txt
+## Create app directory
+WORKDIR /app
 
-# Dependencies required for psycopg2 (used for Postgres client)
-RUN apt update -y && apt install -y build-essential libpq-dev
+# Update the local package index with the latest packages from the repositories
+RUN apt update -y
 
-# Dependencies are installed during build time in the container itself so we don't have OS mismatch
+# Install a couple of packages to successfully install postgresql server locally
+RUN apt install build-essential libpq-dev -y
+
+# Update python modules to successfully build the required modules
+RUN pip install --upgrade pip setuptools wheel
+
+# Install app dependencies
+COPY analytics/requirements.txt ./
+
 RUN pip install -r requirements.txt
 
-COPY . .
+# Bundle app source
+COPY analytics /app
 
-CMD python app.py
+EXPOSE 5153
+CMD [ "python", "app.py" ]
