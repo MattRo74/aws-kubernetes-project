@@ -16,7 +16,7 @@ Link to the Dockerfile: https://github.com/MattRo74/aws-kubernetes-project/blob/
 
 5. Screenshot of `kubectl get pods`
 
-<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/KUBECT_GET_PODS_NEW.png">
+<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/KUBECT_GET_PODS.png">
 
 6. Screenshot of `kubectl describe svc <DATABASE_SERVICE_NAME>`
 
@@ -30,25 +30,21 @@ Link to the Dockerfile: https://github.com/MattRo74/aws-kubernetes-project/blob/
 
 Link to the YAMML Files: https://github.com/MattRo74/aws-kubernetes-project/tree/master/deployment
 
-9. Screenshot of AWS CloudWatch logs for the application
+9. Curl UCI
 
-I run out of budget and I needed to use my own AWS account. The problem is that cloudwatch is not available today:
-
-<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/CLOUDWATCH400.png">
-
-But the application is working on AWS:
-
-Daily Usage:
+Daily Usage (curl a64cd7774cb3347c389a82f5db288b96-157178271.us-east-1.elb.amazonaws.com:5153/api/reports/daily_usage):
 <img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/CURL_DAILY_USAGE.png">
 
-Daily Visits:
+Daily Visits (curl a64cd7774cb3347c389a82f5db288b96-157178271.us-east-1.elb.amazonaws.com:5153/api/reports/user_visits):
 
 <img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/CURL_USER_VISITS.png">
 
-This was the wrong (old) screenshot: 
+10. Screenshot of AWS CloudWatch logs for the application
 
-<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/CLOUDWATCH_LOG.png">
+Starting Page
 
+<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/CLOUDWATCH_LOGGROUPS.png">
 
-BUt I'm sure that this time the logs would be correct.
+Results
 
+<img src="https://github.com/MattRo74/aws-kubernetes-project/blob/master/Deliverables/CLOUDWATCH_RESULTS.png">
